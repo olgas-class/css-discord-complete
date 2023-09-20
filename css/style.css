@@ -92,6 +92,10 @@ p {
 /* HEADER */
 /* Navigation */
 .header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 5rem;
   display: flex;
   background-color: var(--bg-blue);
@@ -128,6 +132,7 @@ p {
 
 /* Hero */
 .hero {
+  margin-top: 5rem;
   color: white;
   padding: 6rem 0;
   background-image: url("../img/jumbo.png");
