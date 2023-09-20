@@ -1,0 +1,209 @@
+:root {
+  --violet: #7289da;
+  --blue: #3161e0;
+  --blue-dark: #23272a;
+  --bg-grey: #f6f6f6;
+  --bg-blue: #255ee9;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+/* COMMON */
+body {
+  font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Layout */
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  /* Debug */
+  border: 1px solid black;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border-radius: 1.5rem;
+    padding: .5em 1em;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+.btn-large {
+    font-size: 1.2rem;
+}
+
+.btn-dark {
+    background-color: var(--blue-dark);
+    color: white;
+}
+
+.buttons-wrapper .btn {
+    margin: .5rem 1rem;
+}
+
+/* HEADER */
+/* Navigation */
+.header-top {
+  height: 5rem;
+  display: flex;
+  background-color: var(--bg-blue);
+  color: white;
+}
+
+.header-logo,
+.header-actions {
+  width: 20%;
+}
+
+.header-nav {
+  flex-grow: 1;
+  /* width: 60%; */
+}
+
+.header-nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.header-nav li {
+  margin: 0 0.5rem;
+}
+
+.header-nav a {
+    text-decoration: none;
+}
+
+.header-actions {
+  text-align: right;
+}
+
+/* Hero */
+.hero {
+  color: white;
+  padding: 6rem 0;
+  background-image: url("../img/jumbo.png");
+  background-size: cover;
+  background-position: center left;
+  /* min-height: 500px;
+    display: flex;
+    align-items: center; */
+}
+
+.hero-content {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* MAIN */
+.main-section {
+  padding: 2rem 0;
+}
+
+.bg-section {
+  background-color: lightgray;
+}
+
+.row {
+  display: flex;
+}
+
+.col-large {
+  width: 65%;
+  /* Debug */
+  background-color: lightgreen;
+  min-height: 300px;
+}
+
+.col-small {
+  width: 35%;
+  /* Debug */
+  background-color: lightsalmon;
+  min-height: 300px;
+}
+
+.main-section .content {
+  /* Debug */
+  background-color: lightseagreen;
+  min-height: 400px;
+}
+
+/* FOOTER */
+footer {
+  /* Debug */
+  background-color: darkslategrey;
+}
+
+.main-column {
+  width: 30%;
+  /* Debug */
+  background-color: lightcyan;
+  min-height: 400px;
+}
+
+.menu-column {
+  width: 70%;
+  display: flex;
+  /* Debug */
+  background-color: lightpink;
+  min-height: 400px;
+}
+
+.footer-menu {
+  width: calc(100% / 4);
+  /* Debug */
+  border: 1px dashed gray;
+  min-height: 400px;
+}
+
+.footer-bottom {
+  /* Debug */
+  border-top: 1px solid white;
+}
+
+.footer-bottom .container {
+  padding: 1rem 0;
+  /* Debug */
+  background-color: lightblue;
+}
