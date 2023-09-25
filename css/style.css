@@ -100,6 +100,7 @@ p {
   display: flex;
   background-color: var(--bg-blue);
   color: white;
+  z-index: 9999;
 }
 
 .header-logo,
@@ -151,7 +152,25 @@ p {
 
 /* MAIN */
 .main-section {
-  padding: 2rem 0;
+  padding: 2rem 0 100px;
+  position: relative;
+}
+
+img.wave {
+  width: 100%;
+}
+
+.wave-section::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  /* fill: gray; */
+  /* opacity: 0.3; */
+  height: 80px;
+  background-image: url(../img/wave.svg);
+  background-size: cover;
+  opacity: 0.18;
 }
 
 .col-small h2 {
